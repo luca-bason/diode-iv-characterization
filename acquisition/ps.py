@@ -2,9 +2,11 @@
 
 from   pyvisa import ResourceManager
 
+#addr= "YOUR INSTRUMENT VISA ADDRESS"
 def psinit():
     rm = ResourceManager()
     instr = rm.open_resource("USB0::0x0AAD::0x0135::035375054::INSTR")
+    #instr = rm.open_resource(addr)
     return instr
 
 def pssel(instr,ch):

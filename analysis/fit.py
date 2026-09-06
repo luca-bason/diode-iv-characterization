@@ -1,4 +1,4 @@
-from   numpy   import *
+from numpy import *
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
@@ -22,7 +22,7 @@ for line in open("out2.dat"):
 
 
 # Fit dei dati
-guess=[1e-12, 1e4]
+guess=[1e-12,10000]
 parameters, covariance =curve_fit(func,x,y,sigma=ey,absolute_sigma=True,p0=guess)
 
 a,b=parameters
