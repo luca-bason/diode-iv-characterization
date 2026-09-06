@@ -18,35 +18,13 @@ $$
 I(V)=a\left[\exp\left(\frac{bV}{T}\right)-1\right],
 $$
 
-with the temperature fixed at
-
-$$
-T=298.46\ \mathrm{K}.
-$$
+with the temperature fixed at $T=298.46\ \mathrm{K}.$
 
 The fit parameters are used to characterize the diode and, assuming an ideality factor \(n=1\), to estimate the Boltzmann constant through
 
 $$
 k_B=\frac{q}{b}.
 $$
-
-## Project structure
-
-.
-├── acquisition/
-│   ├── dmm.py
-│   ├── ps.py
-│   └── test.py
-│
-├── analysis/
-│   ├── fit_scipy.py
-│   └── fit_root.py
-│   └── out2.dat
-│   └── diode_iv_fit.png
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
 
 ### Data acquisition
 
